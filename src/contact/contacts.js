@@ -1,6 +1,10 @@
+import Navigation from "../navigation/navigation"
+
 const Contact = () => {
     return (
-        <h1>Contact</h1>
+        <>
+        <Navigation />
+        <h1>Contact</h1></>
     )
 }
 export default Contact

@@ -1,16 +1,16 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./navigation.css"
 
 const Navigation = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to={"/"}>
             Company Name
-          </a>
+          </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -18,27 +18,23 @@ const Navigation = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <Link to={"/"} className="nav-link">
-                Home
-              </Link>
-              <Link class="nav-link" to={"/about-us"}>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <Link className="nav-link" to={"/about-us"}>
                 About Us
               </Link>
-              <Link class="nav-link" to={"/products"}>
+              <Link className="nav-link" to={"/products"}>
                 Products
               </Link>
-              <Link class="nav-link" to={"/contacts"}>
+              <Link className="nav-link" to={"/contacts"}>
                 Contact
               </Link>
             </div>
           </div>
         </div>
       </nav>
-      <Outlet />
     </>
   );
 };

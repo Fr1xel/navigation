@@ -1,11 +1,11 @@
 import Navigation from "../navigation/navigation"
 
-const Products = () => {
+const Home = () => {
     return(
         <>
         <Navigation />
-        <h1>Products</h1></>
+        <h1>Welcome Home</h1>
+        </>
     )
 }
-
-export default Products
+export default Home;
